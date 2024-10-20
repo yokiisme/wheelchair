@@ -22058,6 +22058,11 @@ PrefabInstance:
       propertyPath: DamageMMFeedbacks
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 377, guid: 815522c3c66a5e04ca6deae2c319a928, type: 3}
+      propertyPath: InitialWeapon
+      value: 
+      objectReference: {fileID: 114277323309942634, guid: fb8d2e90db13fd2488aa68c29911ecb0,
+        type: 3}
     - target: {fileID: 378, guid: 815522c3c66a5e04ca6deae2c319a928, type: 3}
       propertyPath: AbilityInProgressSfx
       value: 
@@ -22094,6 +22099,18 @@ PrefabInstance:
       propertyPath: AbilityInProgressSfx
       value: 
       objectReference: {fileID: 8300000, guid: f489554675a4a0241a8ef8938c1d6067, type: 3}
+    - target: {fileID: 389, guid: 815522c3c66a5e04ca6deae2c319a928, type: 3}
+      propertyPath: RotationMode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 389, guid: 815522c3c66a5e04ca6deae2c319a928, type: 3}
+      propertyPath: ForcedRotation
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 389, guid: 815522c3c66a5e04ca6deae2c319a928, type: 3}
+      propertyPath: ShouldRotateToFaceMovementDirection
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 394, guid: 815522c3c66a5e04ca6deae2c319a928, type: 3}
       propertyPath: JumpStartFeedback
       value: 

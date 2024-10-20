@@ -22058,6 +22058,19 @@ PrefabInstance:
       propertyPath: DamageMMFeedbacks
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 377, guid: 815522c3c66a5e04ca6deae2c319a928, type: 3}
+      propertyPath: InitialWeapon
+      value: 
+      objectReference: {fileID: 114020998038657194, guid: 5588c9cf267f73a4e92b9d89d19c9b05,
+        type: 3}
+    - target: {fileID: 378, guid: 815522c3c66a5e04ca6deae2c319a928, type: 3}
+      propertyPath: InputAuthorized
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 378, guid: 815522c3c66a5e04ca6deae2c319a928, type: 3}
+      propertyPath: ScriptDrivenInput
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 378, guid: 815522c3c66a5e04ca6deae2c319a928, type: 3}
       propertyPath: AbilityInProgressSfx
       value: 
@@ -22098,6 +22111,14 @@ PrefabInstance:
       propertyPath: AbilityInProgressSfx
       value: 
       objectReference: {fileID: 8300000, guid: f489554675a4a0241a8ef8938c1d6067, type: 3}
+    - target: {fileID: 389, guid: 815522c3c66a5e04ca6deae2c319a928, type: 3}
+      propertyPath: RotationMode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 389, guid: 815522c3c66a5e04ca6deae2c319a928, type: 3}
+      propertyPath: ForcedRotation
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 394, guid: 815522c3c66a5e04ca6deae2c319a928, type: 3}
       propertyPath: JumpStartFeedback
       value: 

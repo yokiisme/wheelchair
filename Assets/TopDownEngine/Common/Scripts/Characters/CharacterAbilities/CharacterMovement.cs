@@ -178,6 +178,12 @@ namespace MoreMountains.TopDownEngine
 		{
 			if (ScriptDrivenInput)
 			{
+				if (_character.PlayerID == "Player2" && LoftLevelManager.Instance.SingleMode)
+				{
+					_horizontalMovement = LoftLevelManager.Instance.HorizontalInput_Player1;
+					_verticalMovement = LoftLevelManager.Instance.VerticalInput_Player1;
+				}
+
 				return;
 			}
 
@@ -185,6 +191,11 @@ namespace MoreMountains.TopDownEngine
 			{
 				_horizontalMovement = _horizontalInput;
 				_verticalMovement = _verticalInput;
+				if (_character.PlayerID == "Player1")
+				{
+					LoftLevelManager.Instance.HorizontalInput_Player1 = _horizontalMovement;
+					LoftLevelManager.Instance.VerticalInput_Player1 = _verticalMovement;
+				}
 			}
 			else
 			{

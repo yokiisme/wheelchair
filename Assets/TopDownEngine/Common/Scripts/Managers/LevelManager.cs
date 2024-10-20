@@ -111,7 +111,29 @@ namespace MoreMountains.TopDownEngine
 		protected Collider _collider;
 		protected Collider2D _collider2D;
 		protected Vector3 _initialSpawnPointPosition;
-		
+
+
+		public float HorizontalInput_Player1 = 0.0f;
+		public float VerticalInput_Player1 = 0.0f;
+
+		public bool SingleMode
+		{
+			set
+			{
+				if (m_singleMode != value)
+				{
+					m_singleMode = value;
+				}
+
+			}
+			get
+			{
+				return m_singleMode;
+			}
+		}
+
+		private bool m_singleMode = true;
+
 		/// <summary>
 		/// Statics initialization to support enter play modes
 		/// </summary>
