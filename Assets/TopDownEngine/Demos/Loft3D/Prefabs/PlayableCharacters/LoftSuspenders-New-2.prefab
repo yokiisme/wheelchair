@@ -22065,11 +22065,11 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 378, guid: 815522c3c66a5e04ca6deae2c319a928, type: 3}
       propertyPath: InputAuthorized
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 378, guid: 815522c3c66a5e04ca6deae2c319a928, type: 3}
       propertyPath: ScriptDrivenInput
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 378, guid: 815522c3c66a5e04ca6deae2c319a928, type: 3}
       propertyPath: AbilityInProgressSfx

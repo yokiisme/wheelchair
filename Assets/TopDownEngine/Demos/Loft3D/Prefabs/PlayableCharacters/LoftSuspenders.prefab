@@ -12438,7 +12438,8 @@ MonoBehaviour:
   BlockingMovementStates: 07000000
   BlockingConditionStates: 
   BlockingWeaponStates: 
-  InitialWeapon: {fileID: 0}
+  InitialWeapon: {fileID: 114277323309942634, guid: fb8d2e90db13fd2488aa68c29911ecb0,
+    type: 3}
   CanPickupWeapons: 1
   WeaponUseFeedback: {fileID: 0}
   WeaponAttachment: {fileID: 249}
@@ -12446,7 +12447,7 @@ MonoBehaviour:
   AutomaticallyBindAnimator: 1
   AmmoDisplayID: 0
   AutoIK: 1
-  ContinuousPress: 1
+  ContinuousPress: 0
   GettingHitInterruptsAttack: 0
   UseSecondaryAxisThresholdToShoot: 0
   ForceWeaponAimControl: 0
