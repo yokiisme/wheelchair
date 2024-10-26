@@ -132,7 +132,7 @@ namespace MoreMountains.TopDownEngine
 			}
 		}
 
-		private bool m_singleMode = true;
+		private bool m_singleMode = false;
 
 		/// <summary>
 		/// Statics initialization to support enter play modes

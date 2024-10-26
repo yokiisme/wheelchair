@@ -130,6 +130,8 @@ namespace MoreMountains.TopDownEngine
 			}
 		}
 
+		private float characterY = 0;
+
 		/// <summary>
 		/// Starts a dash
 		/// </summary>
@@ -145,6 +147,7 @@ namespace MoreMountains.TopDownEngine
 			_dashing = true;
 			_dashTimer = 0f;
 			_dashOrigin = this.transform.position;
+			characterY = this.transform.position.y;
 			_controller.FreeMovement = false;
 			_controller3D.DetachFromMovingPlatform();
 			DashFeedback?.PlayFeedbacks(this.transform.position);
@@ -158,6 +161,7 @@ namespace MoreMountains.TopDownEngine
 
 			HandleDashMode();
 		}
+
 
 		protected virtual void HandleDashMode()
 		{
@@ -252,6 +256,7 @@ namespace MoreMountains.TopDownEngine
 					{
 						_newPosition = Vector3.Lerp(_dashOrigin, _dashDestination, DashCurve.Evaluate(_dashTimer / DashDuration));	
 						_dashTimer += Time.deltaTime;
+						this.transform.position = new (this.transform.position.x, characterY, this.transform.position.z);
 						_controller.MovePosition(_newPosition);
 					}
 					else

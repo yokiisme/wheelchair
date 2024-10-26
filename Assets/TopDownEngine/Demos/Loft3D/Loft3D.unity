@@ -3025,7 +3025,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4195150596186120, guid: ee5912a739553564283ca475aa0e794c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -23.75
+      value: -20.7
       objectReference: {fileID: 0}
     - target: {fileID: 4195150596186120, guid: ee5912a739553564283ca475aa0e794c, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3101,7 +3101,7 @@ PrefabInstance:
     - target: {fileID: 224429692818469760, guid: ee5912a739553564283ca475aa0e794c,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -27.999985
+      value: -28
       objectReference: {fileID: 0}
     - target: {fileID: 1940566286900971137, guid: ee5912a739553564283ca475aa0e794c,
         type: 3}
@@ -4809,7 +4809,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1897792226295174, guid: aee9d27d3bc6f8846a9812821c5dcbda, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4365873819947104, guid: aee9d27d3bc6f8846a9812821c5dcbda, type: 3}
       propertyPath: m_RootOrder
@@ -7008,7 +7008,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1305522872760350, guid: 45478dfee9bf51247810d02cd8e66be8, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4550627155584926, guid: 45478dfee9bf51247810d02cd8e66be8, type: 3}
       propertyPath: m_RootOrder
@@ -9236,7 +9236,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1101376284208606, guid: 22dd9981e0766fb489351b3f008b13fe, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4342363781704982, guid: 22dd9981e0766fb489351b3f008b13fe, type: 3}
       propertyPath: m_RootOrder
@@ -11147,7 +11147,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &856689912
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11800,7 +11800,7 @@ Transform:
   m_GameObject: {fileID: 913214260}
   serializedVersion: 2
   m_LocalRotation: {x: 0.35355338, y: -0.35355338, z: 0.1464466, w: 0.8535535}
-  m_LocalPosition: {x: 0.069999695, y: 20.334724, z: -23.75}
+  m_LocalPosition: {x: 0.069999695, y: 20.334724, z: -20.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -12897,7 +12897,7 @@ MonoBehaviour:
   AutoAttributePlayerIDs: 1
   PlayerPrefabs:
   - {fileID: 2687258126517027726, guid: 3cb32d91e4f24ad4499fba50de785bf0, type: 3}
-  - {fileID: 2687258126517027726, guid: e40b8cd7bd2f8504f9eeee8e658f5eb6, type: 3}
+  - {fileID: 5545642695083862392, guid: e423ddd03e472994d9c0380c70a58538, type: 3}
   SceneCharacters: []
   InitialSpawnPoint: {fileID: 1618121293}
   CurrentCheckpoint: {fileID: 0}
@@ -16407,7 +16407,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1897792226295174, guid: aee9d27d3bc6f8846a9812821c5dcbda, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4365873819947104, guid: aee9d27d3bc6f8846a9812821c5dcbda, type: 3}
       propertyPath: m_RootOrder
@@ -17559,7 +17559,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1268774173141522, guid: ac32a8e25dd86c446826e440005f6388, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4062671130946132, guid: ac32a8e25dd86c446826e440005f6388, type: 3}
       propertyPath: m_RootOrder
@@ -19928,7 +19928,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1897792226295174, guid: aee9d27d3bc6f8846a9812821c5dcbda, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4365873819947104, guid: aee9d27d3bc6f8846a9812821c5dcbda, type: 3}
       propertyPath: m_RootOrder
@@ -26015,7 +26015,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1897792226295174, guid: aee9d27d3bc6f8846a9812821c5dcbda, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4365873819947104, guid: aee9d27d3bc6f8846a9812821c5dcbda, type: 3}
       propertyPath: m_RootOrder
@@ -27206,6 +27206,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PatrolSeekAndDestroyReloadingAI
+      objectReference: {fileID: 0}
+    - target: {fileID: 6884510878583953286, guid: c6057b5af429dfd4683b7c613c43bfdc,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
