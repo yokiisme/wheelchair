@@ -193,7 +193,13 @@ namespace MoreMountains.TopDownEngine
 			HandleFeedbacks();
 			UpdateAmmoDisplay();
 			HandleBuffer();
+
+			if (_movement.CurrentState == CharacterStates.MovementStates.Dashing)
+			{
+				CurrentWeapon.transform.localRotation = Quaternion.identity;
+			}
 		}
+
 
 		/// <summary>
 		/// Checks character state and stops shooting if not in normal state
@@ -220,6 +226,8 @@ namespace MoreMountains.TopDownEngine
 			}
 		}
 
+		private Vector3 weaponlocalscale = Vector3.zero;
+
 		/// <summary>
 		/// Gets input and triggers methods based on what's been pressed
 		/// </summary>
@@ -232,6 +240,8 @@ namespace MoreMountains.TopDownEngine
 				return;
 			}
 
+			
+
 			bool inputAuthorized = true;
 			if (CurrentWeapon != null)
 			{
@@ -242,7 +252,8 @@ namespace MoreMountains.TopDownEngine
 			{
 				ShootStart();
 			}
-			
+
+
 			if (inputAuthorized && ((_inputManager.ShootButton.State.CurrentState == MMInput.ButtonStates.ButtonDown) || (_inputManager.ShootAxis == MMInput.ButtonStates.ButtonDown)))
 			{
 				ShootStart();
@@ -284,6 +295,7 @@ namespace MoreMountains.TopDownEngine
 			{
 				ShootStart();
 			}
+
 		}
 
 		/// <summary>

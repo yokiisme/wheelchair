@@ -18551,7 +18551,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterDimension: 0
   CharacterType: 0
-  PlayerID: Player1
+  PlayerID: Player2
   CharacterAnimator: {fileID: 3995096832467747969}
   UseDefaultMecanim: 1
   RunAnimatorSanityChecks: 0
@@ -18834,7 +18834,7 @@ MonoBehaviour:
   BlockingMovementStates: 
   BlockingConditionStates: 
   BlockingWeaponStates: 
-  PlayerID: Player1
+  PlayerID: Player2
   MainInventoryName: SuitMainInventory
   WeaponInventoryName: SuitWeaponInventory
   HotbarInventoryName: 
