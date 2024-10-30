@@ -18487,6 +18487,7 @@ MonoBehaviour:
   Friction: 0
   AddedForce: {x: 0, y: 0, z: 0}
   FreeMovement: 1
+  PlayerID: Player2
   InputMoveDirection: {x: 0, y: 0, z: 0}
   UpdateMode: 0
   VelocityTransferMethod: 2

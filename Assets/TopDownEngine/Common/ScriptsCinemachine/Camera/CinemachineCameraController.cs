@@ -30,10 +30,12 @@ namespace MoreMountains.TopDownEngine
 		[Tooltip("the target character this camera should follow")]
 		public Character TargetCharacter;
 
-		#if MM_CINEMACHINE
+		public Character TargetSecondCharacter;
+
+#if MM_CINEMACHINE
 		protected CinemachineVirtualCamera _virtualCamera;
 		protected CinemachineConfiner _confiner;
-		#elif MM_CINEMACHINE3
+#elif MM_CINEMACHINE3
 		protected CinemachineCamera _virtualCamera;
 		protected CinemachineConfiner3D _confiner;
 		protected CinemachineConfiner2D _confiner2D;
@@ -86,6 +88,11 @@ namespace MoreMountains.TopDownEngine
 			TargetCharacter = character;
 		}
 
+		public void SetSecondTarget(Character character)
+		{
+			TargetSecondCharacter = character;
+		}
+
 		/// <summary>
 		/// Starts following the LevelManager's main player
 		/// </summary>
@@ -102,8 +109,16 @@ namespace MoreMountains.TopDownEngine
 			}
 			if (!FollowsAPlayer) { yield break; }
 			FollowsPlayer = true;
-			#if MM_CINEMACHINE || MM_CINEMACHINE3
-			_virtualCamera.Follow = TargetCharacter.CameraTarget.transform;
+#if MM_CINEMACHINE || MM_CINEMACHINE3
+
+			if (LevelManager.Instance.G_Follow != null)
+			{
+				_virtualCamera.Follow = LevelManager.Instance.G_Follow.transform;
+			}
+			else
+			{
+				_virtualCamera.Follow = TargetCharacter.CameraTarget.transform;
+			}
 			_virtualCamera.enabled = true;
 			#endif
 			

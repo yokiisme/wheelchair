@@ -5292,6 +5292,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1817471472}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &726101119
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 726101120}
+  m_Layer: 0
+  m_Name: CamerFollow
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &726101120
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 726101119}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.18477431, y: -0.09297103, z: -0.17087144}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &727097535 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4586691683392474, guid: d36c57ae01334494a9401c9fa6b371e7,
@@ -12153,7 +12184,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1734572836
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15262,6 +15293,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7647333642738780548, guid: 6dc29a0e8ef65904da486d3f2f569ca4,
         type: 3}
+      propertyPath: G_Follow
+      value: 
+      objectReference: {fileID: 726101119}
+    - target: {fileID: 7647333642738780548, guid: 6dc29a0e8ef65904da486d3f2f569ca4,
+        type: 3}
       propertyPath: PlayerPrefabs.Array.data[0]
       value: 
       objectReference: {fileID: 88077458925086652, guid: e423ddd03e472994d9c0380c70a58538,
@@ -15761,3 +15797,4 @@ SceneRoots:
   - {fileID: 3055081292652346230}
   - {fileID: 7523101844604140425}
   - {fileID: 5878075852043508593}
+  - {fileID: 726101120}

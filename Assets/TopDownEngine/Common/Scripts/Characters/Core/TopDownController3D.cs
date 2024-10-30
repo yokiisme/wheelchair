@@ -16,6 +16,7 @@ namespace MoreMountains.TopDownEngine
 	/// </summary>
 	public class TopDownController3D : TopDownController
 	{
+		public string PlayerID = "Player1";
 		/// the possible modes to compute grounded state. Simple should only be used if your ground is even and flat
 		public enum GroundedComputationModes { Simple, Advanced }
         
@@ -209,6 +210,8 @@ namespace MoreMountains.TopDownEngine
 			{
 				ProcessUpdate();
 			}
+
+			TopDownPositionEvent.Trigger(TopDownPositionEventTypes.PositionEvent, PlayerID);
 		}
 
 		/// <summary>

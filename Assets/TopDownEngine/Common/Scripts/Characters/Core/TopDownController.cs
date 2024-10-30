@@ -99,6 +99,15 @@ namespace MoreMountains.TopDownEngine
 		// true if an obstacle was detected in any of the cardinal directions
 		public virtual bool CollidingWithCardinalObstacle { get; set; }
 
+
+		public Vector3 PositionLastFrame
+		{
+			get
+			{
+				return _positionLastFrame;
+			}
+		}
+
 		protected Vector3 _positionLastFrame;
 		protected Vector3 _speedComputation;
 		protected bool _groundedLastFrame;

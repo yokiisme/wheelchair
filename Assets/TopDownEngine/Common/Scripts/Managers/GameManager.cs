@@ -71,8 +71,35 @@ namespace MoreMountains.TopDownEngine
 			e.OriginCharacter = originCharacter;
 			MMEventManager.TriggerEvent(e);
 		}
-	} 
+	}
 
+
+
+	public enum TopDownPositionEventTypes
+	{ 
+		PositionEvent,
+	}
+
+	public struct TopDownPositionEvent
+	{
+		public TopDownPositionEventTypes EventType;
+		public string PlayerID;
+
+
+		public TopDownPositionEvent(TopDownPositionEventTypes eventType, string playerid)
+		{
+			EventType = eventType;
+			PlayerID = playerid;
+		}
+
+		static TopDownPositionEvent e;
+		public static void Trigger(TopDownPositionEventTypes eventType, string playerid)
+		{
+			e.EventType = eventType;
+			e.PlayerID = playerid;
+			MMEventManager.TriggerEvent(e);
+		}
+	}
 	/// <summary>
 	/// A list of the methods available to change the current score
 	/// </summary>
@@ -141,7 +168,8 @@ namespace MoreMountains.TopDownEngine
 	[AddComponentMenu("TopDown Engine/Managers/Game Manager")]
 	public class GameManager : 	MMPersistentSingleton<GameManager>, 
 		MMEventListener<MMGameEvent>, 
-		MMEventListener<TopDownEngineEvent>, 
+		MMEventListener<TopDownEngineEvent>,
+		MMEventListener<TopDownPositionEvent>,
 		MMEventListener<TopDownEnginePointEvent>
 	{
 		/// the target frame rate for the game
@@ -550,6 +578,11 @@ namespace MoreMountains.TopDownEngine
 			}
 		}
 
+		public virtual void OnMMEvent(TopDownPositionEvent posEvent)
+		{
+			LoftLevelManager.Instance.SetFollowPosition(posEvent.PlayerID);
+		}
+
 		/// <summary>
 		/// OnDisable, we start listening to events.
 		/// </summary>
@@ -557,6 +590,7 @@ namespace MoreMountains.TopDownEngine
 		{
 			this.MMEventStartListening<MMGameEvent> ();
 			this.MMEventStartListening<TopDownEngineEvent> ();
+			this.MMEventStartListening<TopDownPositionEvent> ();
 			this.MMEventStartListening<TopDownEnginePointEvent> ();
 		}
 
@@ -567,6 +601,7 @@ namespace MoreMountains.TopDownEngine
 		{
 			this.MMEventStopListening<MMGameEvent> ();
 			this.MMEventStopListening<TopDownEngineEvent> ();
+			this.MMEventStopListening<TopDownPositionEvent>();
 			this.MMEventStopListening<TopDownEnginePointEvent> ();
 		}
 	}

@@ -10,22 +10,21 @@ namespace MoreMountains.TopDownEngine
 
 	public class LoftLevelManager : LevelManager
 	{
-
 		public override void PlayerDead(Character playerCharacter)
 		{
-			//if (Players.Count < 2)
-			//{
-			//	StartCoroutine(PlayerDeadCo());
-			//}
-
 			if (playerCharacter.PlayerID == "Player1" || playerCharacter.PlayerID == "Player2")
 			{
 
-				//playerCharacter.CharacterAnimator.Play("dying");
 
 			}
+		}
 
-
+		public override void SetFollowPosition(string playerid)
+		{
+			if (G_Follow != null)
+			{
+				G_Follow.transform.position = (Players[0].transform.position + Players[1].transform.position) / 2;
+			}
 		}
 
 
@@ -41,31 +40,10 @@ namespace MoreMountains.TopDownEngine
 				}
 			}
 
-
-			//PointsOfEntryStorage point = GameManager.Instance.GetPointsOfEntry(SceneManager.GetActiveScene().name);
-			//Players[0].RespawnAt(PointsOfEntry[0], Character.FacingDirections.East);
-			//Players[1].RespawnAt(PointsOfEntry[1], point.FacingDirection);
-			//if ((point != null) && (PointsOfEntry.Length >= (point.PointOfEntryIndex + 1)))
-			//{
-
-			//	Players[0].RespawnAt(PointsOfEntry[point.PointOfEntryIndex], point.FacingDirection);
-			//	TopDownEngineEvent.Trigger(TopDownEngineEventTypes.SpawnComplete, Players[0]);
-
-			//	Players[1].RespawnAt(PointsOfEntry[point.PointOfEntryIndex], point.FacingDirection);
-			//	TopDownEngineEvent.Trigger(TopDownEngineEventTypes.SpawnComplete, Players[1]);
-			//	return;
-			//}
-
-			//if (InitialSpawnPoint != null)
-			//{
-			//	InitialSpawnPoint.SpawnPlayer(Players[0]);
-			//	TopDownEngineEvent.Trigger(TopDownEngineEventTypes.SpawnComplete, Players[0]);
-			//	InitialSpawnPoint.SpawnPlayer(Players[1]);
-			//	Players[1].transform.position = new Vector3(Players[0].transform.position.x + 1, Players[0].transform.position.y, Players[0].transform.position.z);
-			//	TopDownEngineEvent.Trigger(TopDownEngineEventTypes.SpawnComplete, Players[1]);
-			//	return;
-			//}
-
+			if (G_Follow != null)
+			{
+				G_Follow.transform.position =( Players[0].transform.position + Players[1].transform.position) / 2;
+			}
 		}
 	}
 }

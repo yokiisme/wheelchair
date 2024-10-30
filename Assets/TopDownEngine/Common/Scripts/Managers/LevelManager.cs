@@ -93,7 +93,10 @@ namespace MoreMountains.TopDownEngine
 		/// if this is true, an event will be triggered on player instantiation to set the range target of all feedbacks to it
 		[Tooltip("if this is true, an event will be triggered on player instantiation to set the range target of all feedbacks to it")]
 		public bool SetPlayerAsFeedbackRangeCenter = false;
-        
+
+		public GameObject G_Follow;
+
+
 		/// the level limits, camera and player won't go beyond this point.
 		public virtual Bounds LevelBounds {  get { return (_collider==null)? new Bounds(): _collider.bounds; } }
 		public virtual Collider BoundsCollider { get; protected set; }
@@ -208,8 +211,18 @@ namespace MoreMountains.TopDownEngine
 			}
 
 			MMCameraEvent.Trigger(MMCameraEventTypes.SetTargetCharacter, Players[0]);
+			if (Players[1] != null)
+			{
+				MMCameraEvent.Trigger(MMCameraEventTypes.SetTargetSecondCharacter, Players[1]);
+			}
+
 			MMCameraEvent.Trigger(MMCameraEventTypes.StartFollowing);
 			MMGameEvent.Trigger("CameraBound");
+		}
+
+		public virtual void SetFollowPosition(string playerid)
+		{ 
+		
 		}
 
 		/// <summary>
@@ -407,6 +420,9 @@ namespace MoreMountains.TopDownEngine
 		/// <summary>
 		/// Kills the player.
 		/// </summary>
+		/// 
+
+
 		public virtual void PlayerDead(Character playerCharacter)
 		{
 			if (Players.Count < 2)
