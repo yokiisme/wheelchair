@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1074991714339394095}
   - component: {fileID: 7127380416570566285}
   - component: {fileID: 5501103301926806028}
-  m_Layer: 13
+  m_Layer: 8
   m_Name: ExplosiveObjects
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -192,7 +192,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7746263474118841202}
   - component: {fileID: 5685950645430543661}
-  m_Layer: 13
+  m_Layer: 8
   m_Name: LoftDamageFeedback
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -417,6 +417,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LoftExplosionFeedback
+      objectReference: {fileID: 0}
+    - target: {fileID: 2916427525354219933, guid: 40442f24aef653141a9ad4dd236ce6f1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6414738329142316893, guid: 40442f24aef653141a9ad4dd236ce6f1,
         type: 3}
