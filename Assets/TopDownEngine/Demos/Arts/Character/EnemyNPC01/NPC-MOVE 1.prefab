@@ -368,7 +368,7 @@ GameObject:
   - component: {fileID: 4029672110447538171}
   - component: {fileID: 97495236003126582}
   m_Layer: 13
-  m_Name: NPC-MOVE
+  m_Name: NPC-MOVE 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -390,6 +390,7 @@ Transform:
   - {fileID: 3875847065587532145}
   - {fileID: 746039489724297574}
   - {fileID: 4963849866668078924}
+  - {fileID: 7745329052530914980}
   - {fileID: 211649861383685316}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1707,11 +1708,11 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0.00000002235174, y: 0.000000029802319, z: -0.000000009313225,
     w: 1}
-  m_LocalPosition: {x: 0.172, y: 0.8, z: 0.422}
+  m_LocalPosition: {x: 0, y: -0.222, z: 0.448}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 3875847065587532145}
+  m_Father: {fileID: 171390416712053858}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &537683954707206856
 MonoBehaviour:
@@ -2357,7 +2358,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Label: 
-  Radius: 7.44
+  Radius: 8.36
   DetectionOriginOffset: {x: 0, y: 0, z: 0}
   TargetLayerMask:
     serializedVersion: 2
@@ -2933,7 +2934,7 @@ MonoBehaviour:
   BlockingMovementStates: 
   BlockingConditionStates: 
   BlockingWeaponStates: 
-  InitialWeapon: {fileID: 114277323309942634, guid: 7d9788e82d6befd44bbf3adef8ced523,
+  InitialWeapon: {fileID: 114594623923584052, guid: 150d865acc9585d4c8061a78068ce740,
     type: 3}
   CanPickupWeapons: 1
   WeaponUseFeedback: {fileID: 0}
@@ -3021,7 +3022,6 @@ Transform:
   m_Children:
   - {fileID: 4016342028640862213}
   - {fileID: 8965083091738045669}
-  - {fileID: 7745329052530914980}
   m_Father: {fileID: 171390416712053858}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1174724995698052711
