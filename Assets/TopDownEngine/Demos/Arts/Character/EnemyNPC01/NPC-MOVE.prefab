@@ -781,11 +781,11 @@ MonoBehaviour:
   PathElements:
   - PathElementPosition: {x: 0, y: 0.05, z: 0}
     Delay: 0
-  - PathElementPosition: {x: -0.8, y: -0.37984276, z: 12.59}
+  - PathElementPosition: {x: -5.0647326, y: -0.37984657, z: 0.570261}
     Delay: 0
-  - PathElementPosition: {x: -0.9432163, y: 0.05, z: 19.4}
+  - PathElementPosition: {x: -4.7906933, y: 0.04999733, z: 5.1211395}
     Delay: 0
-  - PathElementPosition: {x: 0.16, y: 0.05, z: 6.5131645}
+  - PathElementPosition: {x: -0.69734645, y: 0.04999733, z: 4.584009}
     Delay: 0
   ReferenceMMPath: {fileID: 0}
   AbsoluteReferencePath: 0
@@ -1089,7 +1089,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -2682777959959753626, guid: eccecfaca87345145b533582fbfa7a37, type: 3}
+  - {fileID: 2100000, guid: ad02d48eb0c01a948abd81977df80d47, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1171,7 +1171,7 @@ SkinnedMeshRenderer:
   m_BlendShapeWeights: []
   m_RootBone: {fileID: 4016342028640862213}
   m_AABB:
-    m_Center: {x: 0.000114411116, y: 0.057134986, z: 0.014802769}
+    m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 0.7078533, y: 0.8111683, z: 0.19763924}
   m_DirtyAABB: 0
 --- !u!1 &2302702911132847524
@@ -1708,7 +1708,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0.00000002235174, y: 0.000000029802319, z: -0.000000009313225,
     w: 1}
-  m_LocalPosition: {x: 0, y: 0.6, z: 0.38}
+  m_LocalPosition: {x: 0, y: -0.222, z: 0.448}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1728,7 +1728,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UpdateMode: 0
   PositionActive: 0
-  RotationActive: 0
+  RotationActive: 1
   ScaleActive: 0
   PositionWiggleProperties:
     WigglePermitted: 1
@@ -2358,7 +2358,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Label: 
-  Radius: 15
+  Radius: 2.71
   DetectionOriginOffset: {x: 0, y: 0, z: 0}
   TargetLayerMask:
     serializedVersion: 2
@@ -2902,7 +2902,7 @@ MonoBehaviour:
   InputAuthorized: 1
   AnalogInput: 0
   ScriptDrivenInput: 0
-  WalkSpeed: 4
+  WalkSpeed: 1
   ShouldSetMovement: 1
   IdleThreshold: 0.05
   Acceleration: 10
@@ -3016,7 +3016,7 @@ Transform:
   m_GameObject: {fileID: 6419498946789327030}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.595, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3037,7 +3037,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: d5d6700012fd4fe499f778e42f32c97c, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
-  m_ApplyRootMotion: 1
+  m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_WarningMessage: 
