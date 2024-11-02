@@ -143,7 +143,7 @@ MonoBehaviour:
   m_OverrideTileSize: 0
   m_TileSize: 256
   m_OverrideVoxelSize: 0
-  m_VoxelSize: 0.33333334
+  m_VoxelSize: 0.25
   m_MinRegionArea: 2
   m_NavMeshData: {fileID: 0}
   m_BuildHeightMesh: 0
@@ -193,7 +193,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3436505970734927529}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3394,6 +3394,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: MainGate_001 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 840483041232126369, guid: 4e950f0ceccddd54eba377ba8493f742,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227151215833696325, guid: 4e950f0ceccddd54eba377ba8493f742,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2502398583118597887, guid: 4e950f0ceccddd54eba377ba8493f742,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6043560409823555063, guid: 4e950f0ceccddd54eba377ba8493f742,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3402,7 +3417,7 @@ PrefabInstance:
     - target: {fileID: 6043560409823555063, guid: 4e950f0ceccddd54eba377ba8493f742,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.17
+      value: 4.09
       objectReference: {fileID: 0}
     - target: {fileID: 6043560409823555063, guid: 4e950f0ceccddd54eba377ba8493f742,
         type: 3}
@@ -3443,6 +3458,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9010742275759544142, guid: 4e950f0ceccddd54eba377ba8493f742,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5093,10 +5113,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3436505970734927529}
     m_Modifications:
+    - target: {fileID: 2819054556990889133, guid: abf339a0459eba544bf27269c5db70ad,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3385436122749282955, guid: abf339a0459eba544bf27269c5db70ad,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 5073640756804836888, guid: abf339a0459eba544bf27269c5db70ad,
         type: 3}
       propertyPath: m_Name
       value: SmallDoor_001 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5073640756804836888, guid: abf339a0459eba544bf27269c5db70ad,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5548746201169771325, guid: abf339a0459eba544bf27269c5db70ad,
         type: 3}
@@ -5162,6 +5197,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7699556807017845039, guid: abf339a0459eba544bf27269c5db70ad,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6239,10 +6279,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3436505970734927529}
     m_Modifications:
+    - target: {fileID: 2819054556990889133, guid: abf339a0459eba544bf27269c5db70ad,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3385436122749282955, guid: abf339a0459eba544bf27269c5db70ad,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 5073640756804836888, guid: abf339a0459eba544bf27269c5db70ad,
         type: 3}
       propertyPath: m_Name
       value: SmallDoor_001 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5073640756804836888, guid: abf339a0459eba544bf27269c5db70ad,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5548746201169771325, guid: abf339a0459eba544bf27269c5db70ad,
         type: 3}
@@ -6308,6 +6363,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7699556807017845039, guid: abf339a0459eba544bf27269c5db70ad,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10945,10 +11005,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3436505970734927529}
     m_Modifications:
+    - target: {fileID: 2819054556990889133, guid: abf339a0459eba544bf27269c5db70ad,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3385436122749282955, guid: abf339a0459eba544bf27269c5db70ad,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 5073640756804836888, guid: abf339a0459eba544bf27269c5db70ad,
         type: 3}
       propertyPath: m_Name
       value: SmallDoor_001
+      objectReference: {fileID: 0}
+    - target: {fileID: 5073640756804836888, guid: abf339a0459eba544bf27269c5db70ad,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5548746201169771325, guid: abf339a0459eba544bf27269c5db70ad,
         type: 3}
@@ -11014,6 +11089,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7699556807017845039, guid: abf339a0459eba544bf27269c5db70ad,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16704,6 +16784,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: MainGate_001
       objectReference: {fileID: 0}
+    - target: {fileID: 840483041232126369, guid: 4e950f0ceccddd54eba377ba8493f742,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227151215833696325, guid: 4e950f0ceccddd54eba377ba8493f742,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2502398583118597887, guid: 4e950f0ceccddd54eba377ba8493f742,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6043560409823555063, guid: 4e950f0ceccddd54eba377ba8493f742,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -16712,7 +16807,7 @@ PrefabInstance:
     - target: {fileID: 6043560409823555063, guid: 4e950f0ceccddd54eba377ba8493f742,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.09
+      value: 0.068
       objectReference: {fileID: 0}
     - target: {fileID: 6043560409823555063, guid: 4e950f0ceccddd54eba377ba8493f742,
         type: 3}
@@ -16753,6 +16848,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9010742275759544142, guid: 4e950f0ceccddd54eba377ba8493f742,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -27341,6 +27441,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: MediumDoor_001
       objectReference: {fileID: 0}
+    - target: {fileID: 1420164755016645802, guid: 7bc15ab673d04294ab1b2abbfa05e78c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3996638817460227204, guid: 7bc15ab673d04294ab1b2abbfa05e78c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6712446373477348182, guid: 7bc15ab673d04294ab1b2abbfa05e78c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7687713120918553677, guid: 7bc15ab673d04294ab1b2abbfa05e78c,
         type: 3}
       propertyPath: m_LocalScale.y
@@ -27395,6 +27510,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8050742195249241220, guid: 7bc15ab673d04294ab1b2abbfa05e78c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
