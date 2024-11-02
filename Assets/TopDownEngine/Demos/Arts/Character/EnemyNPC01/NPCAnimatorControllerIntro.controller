@@ -6,7 +6,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: SmallBoyAnimatorControllerIntro
+  m_Name: LoftSuitAnimatorControllerIntro
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: Grounded
@@ -208,7 +208,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: -203655887218126122, guid: f3e7d9e49348dc34c839035ea8034b15,
+  m_Motion: {fileID: -203655887218126122, guid: 68f64de94ceebd04cb9f1e5b98762c36,
     type: 3}
   m_Tag: 
   m_SpeedParameter: 
@@ -245,7 +245,7 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: 1102932797086725780}
-    m_Position: {x: 340, y: 310, z: 0}
+    m_Position: {x: 350, y: 310, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []

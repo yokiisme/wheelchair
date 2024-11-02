@@ -12959,7 +12959,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5522246713923526545, guid: 6fba0bbdf1eccd940b24d9e23fa361be, type: 3}
+  - {fileID: 2100000, guid: 4d146bd4ab8810e44b3cbbbbb003fa3d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -18385,7 +18385,7 @@ GameObject:
   - component: {fileID: 9149709816927444901}
   - component: {fileID: 3768489004156115674}
   m_Layer: 10
-  m_Name: SmallBoy2
+  m_Name: SmallBoy1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18487,6 +18487,7 @@ MonoBehaviour:
   Friction: 0
   AddedForce: {x: 0, y: 0, z: 0}
   FreeMovement: 1
+  PlayerID: Player1
   InputMoveDirection: {x: 0, y: 0, z: 0}
   UpdateMode: 0
   VelocityTransferMethod: 2
