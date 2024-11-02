@@ -10,14 +10,6 @@ namespace MoreMountains.TopDownEngine
 
 	public class LoftLevelManager : LevelManager
 	{
-		public override void PlayerDead(Character playerCharacter)
-		{
-			if (playerCharacter.PlayerID == "Player1" || playerCharacter.PlayerID == "Player2")
-			{
-
-
-			}
-		}
 
 		public override void SetFollowPosition(string playerid)
 		{
@@ -35,7 +27,7 @@ namespace MoreMountains.TopDownEngine
 				for (int i = 0; i < Players.Count; i++)
 				{
 					InitialSpawnPoint.SpawnPlayer(Players[i]);
-					Players[i].RespawnAt(PointsOfEntry[i], Character.FacingDirections.North);
+					Players[i].RespawnAt(PointsOfEntry[i], Character.FacingDirections.West);
 					TopDownEngineEvent.Trigger(TopDownEngineEventTypes.SpawnComplete, Players[i]);
 				}
 			}

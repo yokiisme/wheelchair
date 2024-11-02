@@ -160,7 +160,7 @@ namespace MoreMountains.TopDownEngine
 		/// if this is true, animator logs for the associated animator will be turned off to avoid potential spam
 		[Tooltip("if this is true, animator logs for the associated animator will be turned off to avoid potential spam")]
 		public bool DisableAnimatorLogs = true;
-        
+
 		public virtual float LastDamage { get; set; }
 		public virtual Vector3 LastDamageDirection { get; set; }
 		public virtual bool Initialized => _initialized;
@@ -195,11 +195,13 @@ namespace MoreMountains.TopDownEngine
 		protected bool _hasColorProperty = false;
 
 		protected const string _deathAnimatorParameterName = "Death";
+		protected const string _getUpAnimationParameterName = "GetUp";
 		protected const string _healthAnimatorParameterName = "Health";
 		protected const string _healthAsIntAnimatorParameterName = "HealthAsInt";
 		protected int _deathAnimatorParameter;
 		protected int _healthAnimatorParameter;
 		protected int _healthAsIntAnimatorParameter;
+		protected int _getUpAsIntAnimatorParameter;
 
 		protected class InterruptiblesDamageOverTimeCoroutine
 		{
@@ -774,6 +776,10 @@ namespace MoreMountains.TopDownEngine
 				{
 					TopDownEngineEvent.Trigger(TopDownEngineEventTypes.PlayerDeath, _character);
 				}
+				else if(_character.CharacterType == Character.CharacterTypes.AI)
+				{
+					TopDownEngineEvent.Trigger(TopDownEngineEventTypes.AIDeath, _character);
+				}
 			}
 			SetHealth(0);
 
@@ -861,6 +867,12 @@ namespace MoreMountains.TopDownEngine
 				// finally we destroy the object
 				DestroyObject();	
 			}
+
+			if (_character != null && _character._animator != null)
+			{
+				TopDownEngineEvent.Trigger(TopDownEngineEventTypes.SpawnComplete, _character);
+			}
+			
 		}
 
 		/// <summary>
@@ -954,6 +966,7 @@ namespace MoreMountains.TopDownEngine
 				{
 					if (_character != null)
 					{
+						// for Revive
 						_character.gameObject.SetActive(false);
 					}
 					else
@@ -1014,10 +1027,12 @@ namespace MoreMountains.TopDownEngine
 		/// </summary>
 		public virtual void UpdateHealthBar(bool show)
 		{
+			//Debug.Log("1 UpdateHealthBar " + _character.name + "  " + show + " CurrentHealth " + CurrentHealth);
 			UpdateHealthAnimationParameters();
 			
 			if (_healthBar != null)
 			{
+				//Debug.Log("2 UpdateHealthBar " + _character.name + "  " + show + " CurrentHealth " + CurrentHealth);
 				_healthBar.UpdateBar(CurrentHealth, 0f, MaximumHealth, show);
 			}
 
@@ -1030,6 +1045,7 @@ namespace MoreMountains.TopDownEngine
 						// We update the health bar
 						if (GUIManager.HasInstance)
 						{
+							//Debug.Log("3 UpdateHealthBar " + _character.name + "  " + show + " CurrentHealth " + CurrentHealth);
 							GUIManager.Instance.UpdateHealthBar(CurrentHealth, 0f, MaximumHealth, _character.PlayerID);
 						}
 					}
@@ -1043,6 +1059,8 @@ namespace MoreMountains.TopDownEngine
 			{
 				TargetAnimator.SetFloat(_healthAnimatorParameter, CurrentHealth);
 				TargetAnimator.SetInteger(_healthAsIntAnimatorParameter, (int)CurrentHealth);
+
+
 			}
 		}
 

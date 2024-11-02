@@ -33,6 +33,7 @@ namespace MoreMountains.TopDownEngine
 		Pause,
 		UnPause,
 		PlayerDeath,
+		AIDeath,
 		SpawnComplete,
 		RespawnStarted,
 		RespawnComplete,

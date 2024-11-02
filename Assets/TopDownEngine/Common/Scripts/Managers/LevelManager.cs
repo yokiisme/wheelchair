@@ -6,6 +6,7 @@ using MoreMountains.Feedbacks;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using MoreMountains.Tools;
+using MoreMountains.TopDownEngine;
 
 
 namespace MoreMountains.TopDownEngine
@@ -25,6 +26,9 @@ namespace MoreMountains.TopDownEngine
 		/// the list of player prefabs to instantiate
 		[Tooltip("The list of player prefabs this level manager will instantiate on Start")]
 		public Character[] PlayerPrefabs ;
+
+		[Tooltip("The list of player prefabs this level manager will instantiate on Start")]
+		public List<Character> AIPrefabs;
 
 		[Header("Characters already in the scene")]
 		[MMInformation("It's recommended to have the LevelManager instantiate your characters, but if instead you'd prefer to have them already present in the scene, just bind them in the list below.", MMInformationAttribute.InformationType.Info, false)]
@@ -144,6 +148,7 @@ namespace MoreMountains.TopDownEngine
 		protected static void InitializeStatics()
 		{
 			_instance = null;
+			
 		}
 		
 		/// <summary>
@@ -422,6 +427,19 @@ namespace MoreMountains.TopDownEngine
 		/// </summary>
 		/// 
 
+		public virtual void AIDead(Character playerCharacter)
+		{
+			if (AIPrefabs.Contains(playerCharacter))
+			{
+				AIPrefabs.Remove(playerCharacter);
+			}
+
+			if (AIPrefabs.Count == 0)
+			{
+				StartCoroutine(AIDeadCo());
+			}
+		}
+
 
 		public virtual void PlayerDead(Character playerCharacter)
 		{
@@ -430,6 +448,15 @@ namespace MoreMountains.TopDownEngine
 				StartCoroutine (PlayerDeadCo ());
 			}
 		}
+
+		protected virtual IEnumerator AIDeadCo()
+		{
+			yield return new WaitForSeconds(RespawnDelay);
+
+			GUIManager.Instance.SetPauseScreen(true);
+		}
+
+
 
 		/// <summary>
 		/// Triggers the death screen display after a short delay
@@ -589,6 +616,35 @@ namespace MoreMountains.TopDownEngine
 			}
 		}
 
+		private void AIDeathEvent()
+		{
+			//GameObject _inventoryInputManager1 = GameObject.Find("InputSystemManager_Player1");
+			//if (_inventoryInputManager1 != null)
+			//{
+			//	_inventoryInputManager1.SetActive(false);
+			//}
+
+			//GameObject _inventoryInputManager2 = GameObject.Find("InputSystemManager_Player2");
+			//if (_inventoryInputManager2 != null)
+			//{
+			//	_inventoryInputManager2.SetActive(false);
+			//}
+
+			for (int i = 0; i < PlayerPrefabs.Length; i++)
+			{
+				PlayerPrefabs[i].Disable();
+			}
+			
+			//GameObject gameObject = GameObject.Find("InputSystemManager_PauseUI");
+			//InputManager i = gameObject.GetComponent<InputManager>;
+			//UnityEngine.InputSystem.PlayerInput _inventoryInputMnager3 = GameObject.Find("InputSystemManager_PauseUI").GetComponent<UnityEngine.InputSystem.PlayerInput>;
+			//if (_inventoryInputManager3 != null)
+			//{
+			//	_inventoryInputManager3.SetActive(true);
+			//}
+		}
+
+
 		/// <summary>
 		/// Catches TopDownEngineEvents and acts on them, playing the corresponding sounds
 		/// </summary>
@@ -599,6 +655,10 @@ namespace MoreMountains.TopDownEngine
 			{
 				case TopDownEngineEventTypes.PlayerDeath:
 					PlayerDead(engineEvent.OriginCharacter);
+					break;
+				case TopDownEngineEventTypes.AIDeath:
+					AIDeathEvent();
+					AIDead(engineEvent.OriginCharacter);
 					break;
 				case TopDownEngineEventTypes.RespawnStarted:
 					Respawn();
