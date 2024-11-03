@@ -8401,12 +8401,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2736854921693565858, guid: f8582169a79e17644b4aec6dfc124a41,
-        type: 3}
-      propertyPath: sharedProfile
-      value: 
-      objectReference: {fileID: 11400000, guid: e36f417db5d23fd47aede63a82b40a7a,
-        type: 2}
     - target: {fileID: 3713636476150630346, guid: f8582169a79e17644b4aec6dfc124a41,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8463,8 +8457,7 @@ PrefabInstance:
       value: Minimal3DCameras - InputSystem Multiplayer
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: 1204222509043147420, guid: f8582169a79e17644b4aec6dfc124a41, type: 3}
+    m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f8582169a79e17644b4aec6dfc124a41, type: 3}
@@ -11584,6 +11577,7 @@ MonoBehaviour:
   PlayerPrefabs:
   - {fileID: 88077458925086652, guid: e423ddd03e472994d9c0380c70a58538, type: 3}
   - {fileID: 88077458925086652, guid: ff9782dbbb0e8bc4785deb41716ddcec, type: 3}
+  AIPrefabs: []
   SceneCharacters: []
   InitialSpawnPoint: {fileID: 2854643672011560981}
   CurrentCheckpoint: {fileID: 0}
