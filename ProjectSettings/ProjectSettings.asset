@@ -14,9 +14,9 @@ PlayerSettings:
   accelerometerFrequency: 60
   companyName: DefaultCompany
   productName: WeelChair
-  defaultCursor: {fileID: 0}
+  defaultCursor: {fileID: 2800000, guid: 655f1a7c91b98a442bc56a0ed90e5eea, type: 3}
   cursorHotspot: {x: 0, y: 0}
-  m_SplashScreenBackgroundColor: {r: 1, g: 0.23529412, b: 0, a: 1}
+  m_SplashScreenBackgroundColor: {r: 0.03551086, g: 0.222833, b: 0.3584906, a: 1}
   m_ShowUnitySplashScreen: 1
   m_ShowUnitySplashLogo: 1
   m_SplashScreenOverlayOpacity: 0
@@ -40,9 +40,10 @@ PlayerSettings:
     width: 1
     height: 1
   m_SplashScreenLogos:
-  - logo: {fileID: 21300000, guid: 2de366636f4c9fa498926af72ca0834e, type: 3}
+  - logo: {fileID: 21300000, guid: be887012a9a24934d9d69d49951edbaf, type: 3}
     duration: 2
-  m_VirtualRealitySplashScreen: {fileID: 0}
+  m_VirtualRealitySplashScreen: {fileID: 2800000, guid: 4b3ebb0991dd7584098fc21e5cf64ea1,
+    type: 3}
   m_HolographicTrackingLossScreen: {fileID: 0}
   defaultScreenWidth: 1024
   defaultScreenHeight: 768
@@ -293,7 +294,7 @@ PlayerSettings:
   - m_BuildTarget: 
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: a7adf48d4c8aa994cbdb33b10ecd5073, type: 3}
+      m_Icon: {fileID: 2800000, guid: acca55ee5bc20e04ca43d0939cc9f29f, type: 3}
       m_Width: 128
       m_Height: 128
       m_Kind: 0
@@ -789,8 +790,10 @@ PlayerSettings:
   ps4IncludedModules: []
   ps4attribVROutputEnabled: 0
   monoEnv: 
-  splashScreenBackgroundSourceLandscape: {fileID: 0}
-  splashScreenBackgroundSourcePortrait: {fileID: 0}
+  splashScreenBackgroundSourceLandscape: {fileID: 21300000, guid: 4b3ebb0991dd7584098fc21e5cf64ea1,
+    type: 3}
+  splashScreenBackgroundSourcePortrait: {fileID: 21300000, guid: 4b3ebb0991dd7584098fc21e5cf64ea1,
+    type: 3}
   blurSplashScreenBackground: 1
   spritePackerPolicy: 
   webGLMemorySize: 256
