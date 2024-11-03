@@ -334,7 +334,7 @@ namespace MoreMountains.TopDownEngine
                 {
                     ""name"": """",
                     ""id"": ""f112453b-6f03-459b-a23e-70f29feb18bf"",
-                    ""path"": ""<Gamepad>/rightTrigger"",
+                    ""path"": ""<Gamepad>/rightShoulder"",
                     ""interactions"": ""Press(behavior=2)"",
                     ""processors"": """",
                     ""groups"": ""Gamepad"",
@@ -389,7 +389,7 @@ namespace MoreMountains.TopDownEngine
                 {
                     ""name"": """",
                     ""id"": ""dd9bdaac-271a-4f2a-bdd2-7e6718d1c076"",
-                    ""path"": ""<Gamepad>/rightShoulder"",
+                    ""path"": ""<Gamepad>/leftShoulder"",
                     ""interactions"": ""Press(behavior=2)"",
                     ""processors"": """",
                     ""groups"": ""Gamepad"",
@@ -425,7 +425,7 @@ namespace MoreMountains.TopDownEngine
                     ""path"": ""<Gamepad>/leftShoulder"",
                     ""interactions"": ""Press(behavior=2)"",
                     ""processors"": """",
-                    ""groups"": ""Gamepad"",
+                    ""groups"": ""Keyboard"",
                     ""action"": ""SwitchWeapon"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
