@@ -18,7 +18,8 @@ namespace MoreMountains.TopDownEngine
 			{
 				float dis = Vector3.Distance(Players[0].transform.position, Players[1].transform.position);
 				if (dis > 15 && Players[0].ConditionState.CurrentState != CharacterStates.CharacterConditions.Dead &&
-					Players[1].ConditionState.CurrentState != CharacterStates.CharacterConditions.Dead)
+					Players[1].ConditionState.CurrentState != CharacterStates.CharacterConditions.Dead &&
+					!GUIManager.Instance.DeathScreen.activeSelf && !GUIManager.Instance.PauseScreen.activeSelf)
 				{
 					GUIManager.Instance.RemandPOP.SetActive(true);
 				}
