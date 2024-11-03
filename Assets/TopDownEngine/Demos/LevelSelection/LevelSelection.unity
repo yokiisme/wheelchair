@@ -164,7 +164,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 390, y: 534.3}
+  m_SizeDelta: {x: 390, y: 600}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &24020484
 MonoBehaviour:
@@ -1189,6 +1189,79 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 362030893}
   m_CullTransparentMesh: 0
+--- !u!1001 &427157324
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5844027753780482275, guid: 15350275a05a4b74d838024e55b100b5,
+        type: 3}
+      propertyPath: m_Name
+      value: InputSystemManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 7635084206465263347, guid: 15350275a05a4b74d838024e55b100b5,
+        type: 3}
+      propertyPath: PlayerID
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7939828412858010789, guid: 15350275a05a4b74d838024e55b100b5,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4834.538
+      objectReference: {fileID: 0}
+    - target: {fileID: 7939828412858010789, guid: 15350275a05a4b74d838024e55b100b5,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1032.4829
+      objectReference: {fileID: 0}
+    - target: {fileID: 7939828412858010789, guid: 15350275a05a4b74d838024e55b100b5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 88.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7939828412858010789, guid: 15350275a05a4b74d838024e55b100b5,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7939828412858010789, guid: 15350275a05a4b74d838024e55b100b5,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7939828412858010789, guid: 15350275a05a4b74d838024e55b100b5,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7939828412858010789, guid: 15350275a05a4b74d838024e55b100b5,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7939828412858010789, guid: 15350275a05a4b74d838024e55b100b5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7939828412858010789, guid: 15350275a05a4b74d838024e55b100b5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7939828412858010789, guid: 15350275a05a4b74d838024e55b100b5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 15350275a05a4b74d838024e55b100b5, type: 3}
 --- !u!1 &433679906
 GameObject:
   m_ObjectHideFlags: 0
@@ -1494,7 +1567,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 50}
+  m_AnchoredPosition: {x: 0, y: 90}
   m_SizeDelta: {x: 400, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &601294683
@@ -2115,7 +2188,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -187}
+  m_AnchoredPosition: {x: 0, y: -210}
   m_SizeDelta: {x: 310, y: 88}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &1437529777
@@ -2818,7 +2891,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1924234414
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2835,7 +2908,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 193.1, y: -365}
+  m_AnchoredPosition: {x: 193.1, y: -500}
   m_SizeDelta: {x: 320, y: 216.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1924234415
@@ -2886,7 +2959,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: A 3D demo featuring a lot of weapons and a lot of AIs for you to kill
+  m_Text: 'Please Press Right Shoulder to Continue
+
+'
 --- !u!222 &1924234417
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2972,4 +3047,5 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 68901579}
+  - {fileID: 427157324}
   - {fileID: 1896010361}

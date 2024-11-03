@@ -2,6 +2,7 @@ using UnityEngine;
 using MoreMountains.Tools;
 using System.Collections.Generic;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 namespace MoreMountains.TopDownEngine
 {	
@@ -282,11 +283,22 @@ namespace MoreMountains.TopDownEngine
 
 		private void ReloadImpl()
 		{
-			if ((GUIManager.Instance.PauseScreen.activeSelf || GUIManager.Instance.DeathScreen.activeSelf) && ReloadButton.State.CurrentState == MMInput.ButtonStates.ButtonPressed)
+			Debug.Log("ReloadButton.State.CurrentState " + ReloadButton.State.CurrentState.ToString());
+			if (ReloadButton.State.CurrentState == MMInput.ButtonStates.ButtonPressed ||
+				 MMInput.ButtonStates.ButtonDown == ReloadButton.State.CurrentState)
 			{
-				GUIManager.Instance.LevelReload();
-				EventSystem.current.sendNavigationEvents = true;
-			}		
+				if ((SceneManager.GetActiveScene().name == "LevelSence" || SceneManager.GetActiveScene().name == "Environment") && (GUIManager.Instance.PauseScreen.activeSelf || GUIManager.Instance.DeathScreen.activeSelf))
+				{
+					GUIManager.Instance.LevelReload();
+					EventSystem.current.sendNavigationEvents = true;
+				}
+				else if (SceneManager.GetActiveScene().name == "LevelSelection")
+				{
+					MMAdditiveSceneLoadingManager.LoadScene("LevelSence");
+				}
+			}
+
+                
 		}
 
 
