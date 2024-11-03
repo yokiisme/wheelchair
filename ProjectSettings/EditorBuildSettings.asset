@@ -14,7 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/TopDownEngine/Demos/LevelSelection/LevelSelection.unity
     guid: f991cbe75cb701b43baec351a60a630a
-  - enabled: 1
+  - enabled: 0
     path: Assets/TopDownEngine/Demos/Loft3D/Loft3D.unity
     guid: d1174410a185495439298917edf07eea
   - enabled: 0
@@ -140,6 +140,9 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/TopDownEngine/Common/ScriptsInputSystem/MinimalScene3D_InputSystem_Multiplayer.unity
     guid: 7972c7f028000fa4db9cc7937a354d19
+  - enabled: 1
+    path: Assets/Scenes/Enviroment.unity
+    guid: 8b993ba585c20ff46b07965f0b2363e7
   - enabled: 1
     path: Assets/Scenes/LevelSence.unity
     guid: 5eecfc60b043e564eb5941129854022f
