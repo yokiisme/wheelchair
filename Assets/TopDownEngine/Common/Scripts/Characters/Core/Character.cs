@@ -149,6 +149,8 @@ namespace MoreMountains.TopDownEngine
 		protected Vector3 _thisPositionLastFrame;
 
 
+		
+
 		/// <summary>
 		/// Initializes this instance of the character
 		/// </summary>

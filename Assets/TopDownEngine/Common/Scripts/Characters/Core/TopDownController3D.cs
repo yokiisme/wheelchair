@@ -256,6 +256,24 @@ namespace MoreMountains.TopDownEngine
 			ManualControllerColliderHit();
 			HandleGroundContact();
 			ComputeSpeed();
+			//if (!IsVisibleFrom(_characterController.bounds))
+			{
+				//Debug.Log(PlayerID + " out of visible" + " " + Camera.main.name);
+			}
+		}
+
+		public bool IsVisibleFrom(Bounds bounds, Camera camera)
+		{
+			// 获取摄像机的视锥体的六个平面
+			Plane[] planes = GeometryUtility.CalculateFrustumPlanes(camera);
+			// 判断包围盒是否在平面数组内（或与任一平面相交）
+			return GeometryUtility.TestPlanesAABB(planes, bounds);
+		}
+
+		// 在大多数情况下，可以假定摄像机为主摄像机
+		public bool IsVisibleFrom(Bounds bounds)
+		{
+			return IsVisibleFrom(bounds, Camera.main);
 		}
 
 		/// <summary>

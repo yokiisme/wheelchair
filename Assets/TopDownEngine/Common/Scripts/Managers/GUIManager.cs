@@ -190,8 +190,28 @@ namespace MoreMountains.TopDownEngine
 		{
 			if (PauseScreen != null)
 			{
-				PauseScreen.SetActive(state);
 				EventSystem.current.sendNavigationEvents = state;
+				PauseScreen.SetActive(state);
+				
+			}
+		}
+
+		public void LevelReload()
+		{
+			//if (DestroyPersistentCharacter)
+			{
+				GameManager.Instance.DestroyPersistentCharacter();
+			}
+
+			
+
+			//if (DoNotUseLevelManager)
+			//{
+			//	MMAdditiveSceneLoadingManager.LoadScene(newSceneName);
+			//}
+			//else
+			{
+				LevelManager.Instance.GotoLevel("LevelSelection");
 			}
 		}
 

@@ -1,6 +1,7 @@
 using UnityEngine;
 using MoreMountains.Tools;
 using System.Collections.Generic;
+using UnityEngine.EventSystems;
 
 namespace MoreMountains.TopDownEngine
 {	
@@ -273,10 +274,22 @@ namespace MoreMountains.TopDownEngine
 				SetShootAxis ();
 				SetCameraRotationAxis();
 				GetInputButtons ();
+				ReloadImpl();
 			}	
 			GetLastNonNullValues();
 			TestPrimaryAxis();
 		}
+
+		private void ReloadImpl()
+		{
+			if (!EventSystem.current.sendNavigationEvents && ReloadButton.State.CurrentState == MMInput.ButtonStates.ButtonPressed)
+			{
+				GUIManager.Instance.LevelReload();
+				EventSystem.current.sendNavigationEvents = true;
+			}
+		
+		}
+
 
 		protected virtual void TestPrimaryAxis()
 		{
