@@ -431,8 +431,10 @@ namespace MoreMountains.TopDownEngine
 		{
 			if (AIPrefabs.Contains(playerCharacter))
 			{
-				AIPrefabs.Remove(playerCharacter);
+				AIPrefabs.Remove(playerCharacter);			
 			}
+
+			GUIManager.Instance.BossNumText.text = "Boss Num " + LevelManager.Instance.AIPrefabs.Count + "/" + LevelManager.Instance.AIPrefabs.Count;
 
 			if (AIPrefabs.Count == 0)
 			{
@@ -444,7 +446,9 @@ namespace MoreMountains.TopDownEngine
 
 		public virtual void PlayerDead(Character playerCharacter)
 		{
-			if (Players.Count < 2)
+			//if (Players.Count < 2)
+			if(Players[0].ConditionState.CurrentState == CharacterStates.CharacterConditions.Dead &&
+					Players[1].ConditionState.CurrentState == CharacterStates.CharacterConditions.Dead)
 			{
 				StartCoroutine (PlayerDeadCo ());
 			}

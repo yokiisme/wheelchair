@@ -213,14 +213,6 @@ namespace MoreMountains.TopDownEngine
 			if (_inputManager == null) { return; }
 			_horizontalInput = _inputManager.PrimaryMovement.x;
 			_verticalInput = _inputManager.PrimaryMovement.y;
-
-
-			//if (_horizontalInput != 0.0f || _verticalInput != 0.0f || _second_horizontalInput != 0.0f || _second_verticalInput != 0.0f)
-			//{
-				//Debug.Log("************ InternalHandleInput InternalHandleInput " + transform.gameObject.name + " " + _horizontalInput + " " + _verticalInput + " "
-				//+ _second_horizontalInput + " " + _second_verticalInput);
-				//liushu 
-			//}
 			HandleInput();
 		}
 

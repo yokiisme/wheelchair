@@ -10,12 +10,44 @@ namespace MoreMountains.TopDownEngine
 
 	public class LoftLevelManager : LevelManager
 	{
+		public static bool LockMove = false;
 
 		public override void SetFollowPosition(string playerid)
 		{
 			if (G_Follow != null)
 			{
-				G_Follow.transform.position = (Players[0].transform.position + Players[1].transform.position) / 2;
+				float dis = Vector3.Distance(Players[0].transform.position, Players[1].transform.position);
+				if (dis > 15 && Players[0].ConditionState.CurrentState != CharacterStates.CharacterConditions.Dead &&
+					Players[1].ConditionState.CurrentState != CharacterStates.CharacterConditions.Dead)
+				{
+					GUIManager.Instance.RemandPOP.SetActive(true);
+				}
+				else
+				{
+					GUIManager.Instance.RemandPOP.SetActive(false);
+				}
+					
+
+				if (Players[0].ConditionState.CurrentState == CharacterStates.CharacterConditions.Dead &&
+					Players[1].ConditionState.CurrentState != CharacterStates.CharacterConditions.Dead)
+				{
+					G_Follow.transform.position = Players[1].transform.position;
+				}
+				else if (Players[0].ConditionState.CurrentState != CharacterStates.CharacterConditions.Dead &&
+					Players[1].ConditionState.CurrentState == CharacterStates.CharacterConditions.Dead)
+				{
+					G_Follow.transform.position = Players[0].transform.position;
+				}
+				else if (Players[0].ConditionState.CurrentState == CharacterStates.CharacterConditions.Dead &&
+					Players[1].ConditionState.CurrentState == CharacterStates.CharacterConditions.Dead)
+				{
+					G_Follow = null;
+					return;
+				}
+				else
+				{
+					G_Follow.transform.position = (Players[0].transform.position + Players[1].transform.position) / 2;
+				}
 			}
 		}
 

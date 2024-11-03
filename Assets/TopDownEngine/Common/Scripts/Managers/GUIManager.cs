@@ -33,6 +33,12 @@ namespace MoreMountains.TopDownEngine
 		/// the death screen
 		[Tooltip("the death screen")]
 		public GameObject DeathScreen;
+
+		public GameObject BossNum;
+
+		public Text BossNumText;
+
+		public GameObject RemandPOP;
 		/// The mobile buttons
 		[Tooltip("The mobile buttons")]
 		public CanvasGroup Buttons;
@@ -90,6 +96,9 @@ namespace MoreMountains.TopDownEngine
 			}
 
 			_initialized = true;
+
+			BossNumText = BossNum.GetComponent<Text>();
+			BossNumText.text = "Boss Num " + LevelManager.Instance.AIPrefabs.Count + "/" + LevelManager.Instance.AIPrefabs.Count;
 		}
 
 		/// <summary>

@@ -79,6 +79,7 @@ namespace MoreMountains.TopDownEngine
 	public enum TopDownPositionEventTypes
 	{ 
 		PositionEvent,
+		UpdateCurrentPosition,
 	}
 
 	public struct TopDownPositionEvent
