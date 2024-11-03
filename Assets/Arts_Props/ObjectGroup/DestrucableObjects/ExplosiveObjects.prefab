@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 1660358756268245126}
   - component: {fileID: 1074991714339394095}
   - component: {fileID: 7127380416570566285}
-  - component: {fileID: 7360832478969814403}
-  m_Layer: 13
+  - component: {fileID: 5501103301926806028}
+  m_Layer: 8
   m_Name: ExplosiveObjects
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -160,7 +160,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &7360832478969814403
+--- !u!64 &5501103301926806028
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -181,7 +181,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 6549136822804405168, guid: fe357c14b38b11f42a5c75d71d2e2943, type: 3}
 --- !u!1 &1227541999565136414
 GameObject:
   m_ObjectHideFlags: 0
@@ -192,7 +192,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7746263474118841202}
   - component: {fileID: 5685950645430543661}
-  m_Layer: 13
+  m_Layer: 8
   m_Name: LoftDamageFeedback
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -417,6 +417,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LoftExplosionFeedback
+      objectReference: {fileID: 0}
+    - target: {fileID: 2916427525354219933, guid: 40442f24aef653141a9ad4dd236ce6f1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6414738329142316893, guid: 40442f24aef653141a9ad4dd236ce6f1,
         type: 3}
