@@ -289,7 +289,7 @@ MonoBehaviour:
   TriggerMode: 1
   DelayBeforeUse: 0
   DelayBeforeUseReleaseInterruption: 1
-  TimeBetweenUses: 0.1
+  TimeBetweenUses: 1
   TimeBetweenUsesReleaseInterruption: 1
   UseBurstMode: 0
   BurstLength: 3
@@ -460,7 +460,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   LaserWidth: {x: 0.01, y: 0.01}
-  LaserMaterial: {fileID: 2100000, guid: 639ba09dbd54ea44c9155c110ff85e70, type: 2}
+  LaserMaterial: {fileID: 2100000, guid: 43d930b80bcd49c4698ac9e9b50485a6, type: 2}
 --- !u!1 &1644065306887236
 GameObject:
   m_ObjectHideFlags: 0
