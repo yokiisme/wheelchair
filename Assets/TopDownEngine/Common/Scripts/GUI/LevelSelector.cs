@@ -49,7 +49,7 @@ namespace MoreMountains.TopDownEngine
 				
 			if (DoNotUseLevelManager)
 			{
-				MMAdditiveSceneLoadingManager.LoadScene(newSceneName);    
+				MMAdditiveSceneLoadingManager.LoadScene(newSceneName);
 			}
 			else
 			{

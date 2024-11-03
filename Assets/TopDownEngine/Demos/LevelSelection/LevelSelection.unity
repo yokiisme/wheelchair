@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 24020485}
   - component: {fileID: 24020484}
   m_Layer: 5
-  m_Name: Loft
+  m_Name: LevelScene
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -214,8 +214,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e4b0d1cd80da94a45aa0330e683ec925, type: 3}
-  m_Type: 1
+  m_Sprite: {fileID: 0}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1275,7 +1275,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &505318477
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1494,8 +1494,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 170.1}
-  m_SizeDelta: {x: 390, y: 195}
+  m_AnchoredPosition: {x: 0, y: 50}
+  m_SizeDelta: {x: 400, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &601294683
 MonoBehaviour:
@@ -1517,7 +1517,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a173cc37ae7bb09448f80b53b7f4cc94, type: 3}
+  m_Sprite: {fileID: 21300000, guid: acca55ee5bc20e04ca43d0939cc9f29f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1969,6 +1969,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1469652664}
     m_Modifications:
+    - target: {fileID: 114377659073113022, guid: 16cc9c38c66c5284fafe24a0a5f5ced2,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.24528301
+      objectReference: {fileID: 0}
+    - target: {fileID: 114377659073113022, guid: 16cc9c38c66c5284fafe24a0a5f5ced2,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.20703642
+      objectReference: {fileID: 0}
+    - target: {fileID: 114377659073113022, guid: 16cc9c38c66c5284fafe24a0a5f5ced2,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.15388037
+      objectReference: {fileID: 0}
     - target: {fileID: 224742993359236318, guid: 16cc9c38c66c5284fafe24a0a5f5ced2,
         type: 3}
       propertyPath: m_Pivot.x
@@ -2136,7 +2151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 316ab92be1a09414daadf97f5d5d2a77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LevelName: Loft3D
+  LevelName: LevelSence
   DoNotUseLevelManager: 1
   DestroyPersistentCharacter: 0
 --- !u!114 &1437529780
@@ -2803,7 +2818,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1924234414
 RectTransform:
   m_ObjectHideFlags: 0

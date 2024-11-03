@@ -436,6 +436,7 @@ namespace MoreMountains.TopDownEngine
 
 			if (AIPrefabs.Count == 0)
 			{
+				AIDeathEvent();
 				StartCoroutine(AIDeadCo());
 			}
 		}
@@ -618,30 +619,11 @@ namespace MoreMountains.TopDownEngine
 
 		private void AIDeathEvent()
 		{
-			//GameObject _inventoryInputManager1 = GameObject.Find("InputSystemManager_Player1");
-			//if (_inventoryInputManager1 != null)
-			//{
-			//	_inventoryInputManager1.SetActive(false);
-			//}
-
-			//GameObject _inventoryInputManager2 = GameObject.Find("InputSystemManager_Player2");
-			//if (_inventoryInputManager2 != null)
-			//{
-			//	_inventoryInputManager2.SetActive(false);
-			//}
-
 			for (int i = 0; i < PlayerPrefabs.Length; i++)
 			{
-				PlayerPrefabs[i].Disable();
+				PlayerPrefabs[i].gameObject.SetActive(false);
 			}
-			
-			//GameObject gameObject = GameObject.Find("InputSystemManager_PauseUI");
-			//InputManager i = gameObject.GetComponent<InputManager>;
-			//UnityEngine.InputSystem.PlayerInput _inventoryInputMnager3 = GameObject.Find("InputSystemManager_PauseUI").GetComponent<UnityEngine.InputSystem.PlayerInput>;
-			//if (_inventoryInputManager3 != null)
-			//{
-			//	_inventoryInputManager3.SetActive(true);
-			//}
+
 		}
 
 
@@ -657,7 +639,6 @@ namespace MoreMountains.TopDownEngine
 					PlayerDead(engineEvent.OriginCharacter);
 					break;
 				case TopDownEngineEventTypes.AIDeath:
-					AIDeathEvent();
 					AIDead(engineEvent.OriginCharacter);
 					break;
 				case TopDownEngineEventTypes.RespawnStarted:

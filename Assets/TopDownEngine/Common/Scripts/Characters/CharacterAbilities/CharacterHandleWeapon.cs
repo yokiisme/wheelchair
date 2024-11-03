@@ -376,6 +376,7 @@ namespace MoreMountains.TopDownEngine
 		/// </summary>
 		public virtual void ShootStop()
 		{
+			
 			// if the Shoot action is enabled in the permissions, we continue, if not we do nothing
 			if (!AbilityAuthorized
 			    || (CurrentWeapon == null))
@@ -385,6 +386,8 @@ namespace MoreMountains.TopDownEngine
 
 			if (CurrentWeapon.WeaponState.CurrentState == Weapon.WeaponStates.WeaponIdle)
 			{
+				Debug.Log("5555555555");
+				ForceStop();
 				return;
 			}
 
@@ -397,16 +400,19 @@ namespace MoreMountains.TopDownEngine
 
 			if ((CurrentWeapon.WeaponState.CurrentState == Weapon.WeaponStates.WeaponDelayBeforeUse) && (!CurrentWeapon.DelayBeforeUseReleaseInterruption))
 			{
+				Debug.Log("66666666666");
 				return;
 			}
 
 			if ((CurrentWeapon.WeaponState.CurrentState == Weapon.WeaponStates.WeaponDelayBetweenUses) && (!CurrentWeapon.TimeBetweenUsesReleaseInterruption))
 			{
+				Debug.Log("7777777777777");
 				return;
 			}
 
 			if (CurrentWeapon.WeaponState.CurrentState == Weapon.WeaponStates.WeaponUse) 
 			{
+				Debug.Log("99999999999999");
 				return;
 			}
 
@@ -422,7 +428,7 @@ namespace MoreMountains.TopDownEngine
 			PlayAbilityStopFeedbacks();
 			if (CurrentWeapon != null)
 			{
-				CurrentWeapon.TurnWeaponOff();    
+				CurrentWeapon.TurnWeaponOff(true);    
 			}
 		}
 

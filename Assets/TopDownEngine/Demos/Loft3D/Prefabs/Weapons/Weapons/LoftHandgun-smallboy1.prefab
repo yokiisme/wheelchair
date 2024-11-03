@@ -248,7 +248,7 @@ GameObject:
   - component: {fileID: 114398865862223764}
   - component: {fileID: 8942932845765631029}
   m_Layer: 0
-  m_Name: LoftHandgun
+  m_Name: LoftHandgun-smallboy1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -298,7 +298,7 @@ MonoBehaviour:
   MagazineSize: 30
   AutoReload: 0
   NoInputReload: 0
-  ReloadTime: 2
+  ReloadTime: 1
   AmmoConsumedPerShot: 1
   AutoDestroyWhenEmpty: 0
   AutoDestroyWhenEmptyDelay: 1

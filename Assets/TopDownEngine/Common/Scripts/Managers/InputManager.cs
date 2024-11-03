@@ -282,12 +282,11 @@ namespace MoreMountains.TopDownEngine
 
 		private void ReloadImpl()
 		{
-			if (!EventSystem.current.sendNavigationEvents && ReloadButton.State.CurrentState == MMInput.ButtonStates.ButtonPressed)
+			if ((GUIManager.Instance.PauseScreen.activeSelf || GUIManager.Instance.DeathScreen.activeSelf) && ReloadButton.State.CurrentState == MMInput.ButtonStates.ButtonPressed)
 			{
 				GUIManager.Instance.LevelReload();
 				EventSystem.current.sendNavigationEvents = true;
-			}
-		
+			}		
 		}
 
 

@@ -346,7 +346,7 @@ namespace MoreMountains.TopDownEngine
 			IsAutoComboWeapon = false;
 			if (_comboWeapon != null)
 			{
-				IsComboWeapon = true;
+				IsComboWeapon = false;
 				IsAutoComboWeapon = (_comboWeapon.InputMode == ComboWeapon.InputModes.Auto);
 				_comboWeapon.Initialization();
 			}
@@ -836,9 +836,9 @@ namespace MoreMountains.TopDownEngine
 		/// <summary>
 		/// Turns the weapon off.
 		/// </summary>
-		public virtual void TurnWeaponOff()
+		public virtual void TurnWeaponOff(bool force = false)
 		{
-			if ((WeaponState.CurrentState == WeaponStates.WeaponIdle || WeaponState.CurrentState == WeaponStates.WeaponStop))
+			if ((WeaponState.CurrentState == WeaponStates.WeaponIdle || WeaponState.CurrentState == WeaponStates.WeaponStop) && !force)
 			{
 				return;
 			}

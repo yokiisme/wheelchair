@@ -285,6 +285,12 @@ namespace MoreMountains.Tools
 			_speedIntervals = speedIntervals;
 
 			SceneManager.LoadScene(_loadingScreenSceneName, LoadSceneMode.Additive);
+
+			if (sceneToLoadName == "LevelSence")
+			{
+				SceneManager.LoadScene("Enviroment", LoadSceneMode.Additive);
+			}
+
 		}
         
 		private static Scene[] GetScenesToUnload(MMAdditiveSceneLoadingManagerSettings.UnloadMethods unloaded)
