@@ -51,7 +51,7 @@ MonoBehaviour:
   TriggerMode: 0
   DelayBeforeUse: 0
   DelayBeforeUseReleaseInterruption: 0
-  TimeBetweenUses: 2
+  TimeBetweenUses: 1
   TimeBetweenUsesReleaseInterruption: 0
   UseBurstMode: 0
   BurstLength: 3
@@ -76,7 +76,7 @@ MonoBehaviour:
   RightHandHandle: {fileID: 0}
   ModifyMovementWhileAttacking: 0
   MovementMultiplier: 0
-  PreventAllMovementWhileInUse: 1
+  PreventAllMovementWhileInUse: 0
   PreventAllAimWhileInUse: 0
   RecoilForce: 0
   Animators: []
@@ -110,7 +110,7 @@ MonoBehaviour:
   MeleeDamageAreaMode: 0
   DamageAreaShape: 2
   AreaOffset: {x: 0, y: 0, z: 0}
-  AreaSize: {x: 4, y: 2, z: 4}
+  AreaSize: {x: 3, y: 3, z: 3}
   TriggerFilter: 195
   HitDamageableFeedback: {fileID: 0}
   HitNonDamageableFeedback: {fileID: 0}
@@ -119,7 +119,7 @@ MonoBehaviour:
   ActiveDuration: 0.3
   TargetLayerMask:
     serializedVersion: 2
-    m_Bits: 1280
+    m_Bits: 1024
   MinDamageCaused: 30
   MaxDamageCaused: 30
   Knockback: 1
