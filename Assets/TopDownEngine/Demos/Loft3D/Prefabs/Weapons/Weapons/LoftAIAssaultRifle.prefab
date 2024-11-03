@@ -10954,7 +10954,7 @@ MonoBehaviour:
       type: {class: MMF_CinemachineImpulse, ns: MoreMountains.FeedbacksForThirdParty,
         asm: MoreMountains.Tools}
       data:
-        Active: 1
+        Active: 0
         UniqueID: -325314902
         Label: Cinemachine Impulse
         ChannelMode: 0
@@ -11503,7 +11503,7 @@ MonoBehaviour:
     - rid: 5
       type: {class: MMF_Light, ns: MoreMountains.Feedbacks, asm: MoreMountains.Tools}
       data:
-        Active: 1
+        Active: 0
         UniqueID: -622034803
         Label: Light
         ChannelMode: 0

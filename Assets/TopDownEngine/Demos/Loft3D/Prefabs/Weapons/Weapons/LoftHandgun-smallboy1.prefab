@@ -112,6 +112,7 @@ Transform:
   m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 3371373391074487339}
   - {fileID: 4726479394100204}
   m_Father: {fileID: 4070249879446882}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -145,7 +146,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4424307378728516}
-  - {fileID: 3371373391074487339}
   - {fileID: 4509201433976862}
   - {fileID: 4938342036475394}
   m_Father: {fileID: 4202281423975200}
@@ -289,7 +289,7 @@ MonoBehaviour:
   TriggerMode: 1
   DelayBeforeUse: 0
   DelayBeforeUseReleaseInterruption: 1
-  TimeBetweenUses: 0.1
+  TimeBetweenUses: 0.5
   TimeBetweenUsesReleaseInterruption: 1
   UseBurstMode: 0
   BurstLength: 3
@@ -1135,7 +1135,7 @@ MonoBehaviour:
     - rid: 1
       type: {class: MMF_Flash, ns: MoreMountains.Feedbacks, asm: MoreMountains.Tools}
       data:
-        Active: 1
+        Active: 0
         UniqueID: 597212648
         Label: Flash
         ChannelMode: 0
@@ -1206,7 +1206,7 @@ MonoBehaviour:
           ButtonText: Automatic Shaker Setup
         Owner: {fileID: 8815357889401361418}
         DebugActive: 0
-        FlashColor: {r: 1, g: 0.78902745, b: 0, a: 1}
+        FlashColor: {r: 0.6132076, g: 0.4009762, b: 0, a: 1}
         FlashDuration: 0.1
         FlashAlpha: 0.1
         FlashID: 0
@@ -1321,10 +1321,10 @@ MonoBehaviour:
             DecayTime: 0.7
             ScaleWithImpact: 1
             HoldForever: 0
-          ImpactRadius: 100
+          ImpactRadius: 5
           DirectionMode: 0
           DissipationMode: 2
-          DissipationDistance: 1000
+          DissipationDistance: 100
           PropagationSpeed: 343
         Velocity: {x: 1, y: 1, z: 1}
         ClearImpulseOnStop: 0
@@ -26931,8 +26931,8 @@ Transform:
   m_GameObject: {fileID: 8737509233704568076}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0.16749999, z: 0.97166646}
+  m_LocalScale: {x: 0.8333333, y: 0.8333333, z: 0.8333333}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4988188038592625351}
@@ -26941,7 +26941,7 @@ Transform:
   - {fileID: 3041473315118952906}
   - {fileID: 7406418342202263030}
   - {fileID: 1433960537897553168}
-  m_Father: {fileID: 4070249879446882}
+  m_Father: {fileID: 4424307378728516}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!198 &6014071291427334910
 ParticleSystem:
