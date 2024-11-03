@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6688117133247641306}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: ScifiLab_WindowWall_002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,6 +44,14 @@ PrefabInstance:
     - target: {fileID: 1726254247067736, guid: 130285f6824c6b343987ff150a0bd211, type: 3}
       propertyPath: m_Name
       value: SM_Bld_Wall_04_Alt
+      objectReference: {fileID: 0}
+    - target: {fileID: 1726254247067736, guid: 130285f6824c6b343987ff150a0bd211, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1937814295970336, guid: 130285f6824c6b343987ff150a0bd211, type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 4061040161476304, guid: 130285f6824c6b343987ff150a0bd211, type: 3}
       propertyPath: m_LocalPosition.x
@@ -107,6 +115,14 @@ PrefabInstance:
     - target: {fileID: 1726254247067736, guid: 130285f6824c6b343987ff150a0bd211, type: 3}
       propertyPath: m_Name
       value: SM_Bld_Wall_04_Alt (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1726254247067736, guid: 130285f6824c6b343987ff150a0bd211, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1937814295970336, guid: 130285f6824c6b343987ff150a0bd211, type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 4061040161476304, guid: 130285f6824c6b343987ff150a0bd211, type: 3}
       propertyPath: m_LocalPosition.x

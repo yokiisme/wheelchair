@@ -1,5 +1,99 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2104358963713447688
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3394197885849577277}
+  - component: {fileID: 5692805600544588471}
+  m_Layer: 8
+  m_Name: Point Light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3394197885849577277
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2104358963713447688}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.64, y: 1.57, z: 2.19}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2384595894122972975}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!108 &5692805600544588471
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2104358963713447688}
+  m_Enabled: 1
+  serializedVersion: 10
+  m_Type: 2
+  m_Shape: 0
+  m_Color: {r: 0.51366144, g: 0.8226325, b: 0.9150943, a: 1}
+  m_Intensity: 1.29
+  m_Range: 6.704582
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!1 &2277292344378842941
 GameObject:
   m_ObjectHideFlags: 0
@@ -9,7 +103,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2384595894122972975}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Ground_CrossRoad_002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36,6 +130,7 @@ Transform:
   - {fileID: 4264668788280865721}
   - {fileID: 7647504857525195902}
   - {fileID: 3847531146969210184}
+  - {fileID: 3394197885849577277}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &3852073885592201528
@@ -49,6 +144,10 @@ PrefabInstance:
     - target: {fileID: 1559522738338180, guid: df662df82e46b874b9d59f720516dd43, type: 3}
       propertyPath: m_Name
       value: SM_Bld_Wall_05
+      objectReference: {fileID: 0}
+    - target: {fileID: 1559522738338180, guid: df662df82e46b874b9d59f720516dd43, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4642117726106736, guid: df662df82e46b874b9d59f720516dd43, type: 3}
       propertyPath: m_LocalPosition.x
@@ -112,6 +211,10 @@ PrefabInstance:
     - target: {fileID: 1718804986652596, guid: 34eafde291dd803468bc26dce0147eb6, type: 3}
       propertyPath: m_Name
       value: SM_Bld_Wall_Corner_Pillar_Wide_05 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1718804986652596, guid: 34eafde291dd803468bc26dce0147eb6, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4840043605942872, guid: 34eafde291dd803468bc26dce0147eb6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -178,7 +281,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1182560378374930, guid: ba8c17098e39a004d8754f7823b7bcc7, type: 3}
       propertyPath: m_Layer
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4824984152862614, guid: ba8c17098e39a004d8754f7823b7bcc7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -245,7 +348,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1165945658302040, guid: 978e2ff4a63aae4439b5e73ffcb833b7, type: 3}
       propertyPath: m_Layer
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4632786278472936, guid: 978e2ff4a63aae4439b5e73ffcb833b7, type: 3}
       propertyPath: m_LocalScale.x
@@ -320,7 +423,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1165945658302040, guid: 978e2ff4a63aae4439b5e73ffcb833b7, type: 3}
       propertyPath: m_Layer
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4632786278472936, guid: 978e2ff4a63aae4439b5e73ffcb833b7, type: 3}
       propertyPath: m_LocalScale.x
@@ -393,6 +496,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bld_Wall_Corner_Pillar_Wide_05 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1718804986652596, guid: 34eafde291dd803468bc26dce0147eb6, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4840043605942872, guid: 34eafde291dd803468bc26dce0147eb6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.59
@@ -458,7 +565,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1165945658302040, guid: 978e2ff4a63aae4439b5e73ffcb833b7, type: 3}
       propertyPath: m_Layer
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4632786278472936, guid: 978e2ff4a63aae4439b5e73ffcb833b7, type: 3}
       propertyPath: m_LocalScale.x
