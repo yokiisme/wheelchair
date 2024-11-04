@@ -434,7 +434,7 @@ namespace MoreMountains.TopDownEngine
 				AIPrefabs.Remove(playerCharacter);			
 			}
 
-			GUIManager.Instance.BossNumText.text = "Boss Num " + LevelManager.Instance.AIPrefabs.Count + "/" + LevelManager.Instance.AIPrefabs.Count;
+			GUIManager.Instance.BossNumText.text = "Boss Num " + LevelManager.Instance.AIPrefabs.Count + "/" + GUIManager.Instance.MaxBossNum;
 
 			if (AIPrefabs.Count == 0)
 			{

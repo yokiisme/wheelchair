@@ -38,6 +38,8 @@ namespace MoreMountains.TopDownEngine
 
 		public Text BossNumText;
 
+		public int MaxBossNum;
+
 		public GameObject RemandPOP;
 		/// The mobile buttons
 		[Tooltip("The mobile buttons")]
@@ -98,7 +100,8 @@ namespace MoreMountains.TopDownEngine
 			_initialized = true;
 
 			BossNumText = BossNum.GetComponent<Text>();
-			BossNumText.text = "Boss Num " + LevelManager.Instance.AIPrefabs.Count + "/" + LevelManager.Instance.AIPrefabs.Count;
+			MaxBossNum = LevelManager.Instance.AIPrefabs.Count;
+			BossNumText.text = "Boss Num " + LevelManager.Instance.AIPrefabs.Count + "/" + MaxBossNum;
 		}
 
 		/// <summary>
